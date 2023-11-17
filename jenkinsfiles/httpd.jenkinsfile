@@ -1,0 +1,13 @@
+pipeline{
+        agent any
+        stages{
+                stage("Install httpd/apache"){
+                        steps{
+                                script{
+                                        sh "ansible-playbook httpd.yml"
+                                        }
+                                }
+                        }
+                }
+        }
+

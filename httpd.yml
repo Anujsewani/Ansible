@@ -1,0 +1,7 @@
+- hosts: 3.110.169.183
+  tasks:
+          - name: "install apache2"
+            package:
+                    name: "apache2"
+                    state: present
+
