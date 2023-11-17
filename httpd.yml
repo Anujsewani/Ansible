@@ -1,4 +1,4 @@
-- hosts: 3.110.169.183
+- hosts: all
   tasks:
           - name: "install apache2"
             package:
